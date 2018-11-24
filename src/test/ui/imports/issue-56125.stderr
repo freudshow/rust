@@ -23,7 +23,7 @@ note: `issue_56125` could also refer to the module imported here
    |
 LL | use issue_56125::last_segment::*;
    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   = help: use `self::issue_56125` to refer to this module unambiguously
+   = help: use `crate::issue_56125` to refer to this module unambiguously
 
 error[E0659]: `issue_56125` is ambiguous (name vs any other name during import resolution)
   --> $DIR/issue-56125.rs:8:5
@@ -38,7 +38,7 @@ note: `issue_56125` could also refer to the module imported here
    |
 LL | use issue_56125::last_segment::*;
    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   = help: use `self::issue_56125` to refer to this module unambiguously
+   = help: use `crate::issue_56125` to refer to this module unambiguously
 
 error: aborting due to 4 previous errors
 
